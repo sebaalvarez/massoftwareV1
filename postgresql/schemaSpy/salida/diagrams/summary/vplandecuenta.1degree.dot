@@ -1,0 +1,77 @@
+// dot 2.38.0 on Windows 10 10.0
+// SchemaSpy rev 590
+digraph "vplandecuenta" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+    nodesep="0.18"
+    ranksep="0.46"
+    fontname="Helvetica"
+    fontsize="11"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "vplandecuenta" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">vplandecuenta</TD></TR>
+      <TR><TD PORT="classplandecuenta" COLSPAN="3" ALIGN="LEFT">classplandecuenta</TD></TR>
+      <TR><TD PORT="id" COLSPAN="3" ALIGN="LEFT">id</TD></TR>
+      <TR><TD PORT="ejerciciocontable_id" COLSPAN="3" ALIGN="LEFT">ejerciciocontable_id</TD></TR>
+      <TR><TD PORT="ejerciciocontable_ejercicio" COLSPAN="3" ALIGN="LEFT">ejerciciocontable_ejercicio</TD></TR>
+      <TR><TD PORT="ejerciciocontable_fechaapertura" COLSPAN="3" ALIGN="LEFT">ejerciciocontable_fechaapertura</TD></TR>
+      <TR><TD PORT="ejerciciocontable_fechacierre" COLSPAN="3" ALIGN="LEFT">ejerciciocontable_fechacierre</TD></TR>
+      <TR><TD PORT="ejerciciocontable_ejerciciocerrado" COLSPAN="3" ALIGN="LEFT">ejerciciocontable_ejerciciocerrado</TD></TR>
+      <TR><TD PORT="ejerciciocontable_ejerciciocerradomodulos" COLSPAN="3" ALIGN="LEFT">ejerciciocontable_ejerciciocerradomodulos</TD></TR>
+      <TR><TD PORT="ejerciciocontable_comentario" COLSPAN="3" ALIGN="LEFT">ejerciciocontable_comentario</TD></TR>
+      <TR><TD PORT="codigocuentapadre" COLSPAN="3" ALIGN="LEFT">codigocuentapadre</TD></TR>
+      <TR><TD PORT="codigocuenta" COLSPAN="3" ALIGN="LEFT">codigocuenta</TD></TR>
+      <TR><TD PORT="cuentacontable" COLSPAN="3" ALIGN="LEFT">cuentacontable</TD></TR>
+      <TR><TD PORT="nombre" COLSPAN="3" ALIGN="LEFT">nombre</TD></TR>
+      <TR><TD PORT="imputable" COLSPAN="3" ALIGN="LEFT">imputable</TD></TR>
+      <TR><TD PORT="ajustaporinflacion" COLSPAN="3" ALIGN="LEFT">ajustaporinflacion</TD></TR>
+      <TR><TD PORT="plandecuentaestado_id" COLSPAN="3" ALIGN="LEFT">plandecuentaestado_id</TD></TR>
+      <TR><TD PORT="plandecuentaestado_codigo" COLSPAN="3" ALIGN="LEFT">plandecuentaestado_codigo</TD></TR>
+      <TR><TD PORT="plandecuentaestado_nombre" COLSPAN="3" ALIGN="LEFT">plandecuentaestado_nombre</TD></TR>
+      <TR><TD PORT="cuentaconapropiacion" COLSPAN="3" ALIGN="LEFT">cuentaconapropiacion</TD></TR>
+      <TR><TD PORT="centrodecostocontable_id" COLSPAN="3" ALIGN="LEFT">centrodecostocontable_id</TD></TR>
+      <TR><TD PORT="centrodecostocontable_numero" COLSPAN="3" ALIGN="LEFT">centrodecostocontable_numero</TD></TR>
+      <TR><TD PORT="centrodecostocontable_nombre" COLSPAN="3" ALIGN="LEFT">centrodecostocontable_nombre</TD></TR>
+      <TR><TD PORT="centrodecostocontable_abreviatura" COLSPAN="3" ALIGN="LEFT">centrodecostocontable_abreviatura</TD></TR>
+      <TR><TD PORT="centrodecostocontable_ejerciciocontable_id" COLSPAN="3" ALIGN="LEFT">centrodecostocontable_ejerciciocontable_id</TD></TR>
+      <TR><TD PORT="centrodecostocontable_ejerciciocontable_ejercicio" COLSPAN="3" ALIGN="LEFT">centrodecostocontable_ejerciciocontable_ejercicio</TD></TR>
+      <TR><TD PORT="centrodecostocontable_ejerciciocontable_fechaapertura" COLSPAN="3" ALIGN="LEFT">centrodecostocontable_ejerciciocontable_fechaapertura</TD></TR>
+      <TR><TD PORT="centrodecostocontable_ejerciciocontable_fechacierre" COLSPAN="3" ALIGN="LEFT">centrodecostocontable_ejerciciocontable_fechacierre</TD></TR>
+      <TR><TD PORT="centrodecostocontable_ejerciciocontable_ejerciciocerrado" COLSPAN="3" ALIGN="LEFT">centrodecostocontable_ejerciciocontable_ejerciciocerrado</TD></TR>
+      <TR><TD PORT="centrodecostocontable_ejerciciocontable_ejerciciocerradomodulos" COLSPAN="3" ALIGN="LEFT">centrodecostocontable_ejerciciocontable_ejerciciocerradomodulos</TD></TR>
+      <TR><TD PORT="centrodecostocontable_ejerciciocontable_comentario" COLSPAN="3" ALIGN="LEFT">centrodecostocontable_ejerciciocontable_comentario</TD></TR>
+      <TR><TD PORT="cuentaagrupadora" COLSPAN="3" ALIGN="LEFT">cuentaagrupadora</TD></TR>
+      <TR><TD PORT="porcentaje" COLSPAN="3" ALIGN="LEFT">porcentaje</TD></TR>
+      <TR><TD PORT="puntodeequilibrio_id" COLSPAN="3" ALIGN="LEFT">puntodeequilibrio_id</TD></TR>
+      <TR><TD PORT="puntodeequilibrio_ejerciciocontable_id" COLSPAN="3" ALIGN="LEFT">puntodeequilibrio_ejerciciocontable_id</TD></TR>
+      <TR><TD PORT="puntodeequilibrio_ejerciciocontable_ejercicio" COLSPAN="3" ALIGN="LEFT">puntodeequilibrio_ejerciciocontable_ejercicio</TD></TR>
+      <TR><TD PORT="puntodeequilibrio_ejerciciocontable_fechaapertura" COLSPAN="3" ALIGN="LEFT">puntodeequilibrio_ejerciciocontable_fechaapertura</TD></TR>
+      <TR><TD PORT="puntodeequilibrio_ejerciciocontable_fechacierre" COLSPAN="3" ALIGN="LEFT">puntodeequilibrio_ejerciciocontable_fechacierre</TD></TR>
+      <TR><TD PORT="puntodeequilibrio_ejerciciocontable_ejerciciocerrado" COLSPAN="3" ALIGN="LEFT">puntodeequilibrio_ejerciciocontable_ejerciciocerrado</TD></TR>
+      <TR><TD PORT="puntodeequilibrio_ejerciciocontable_ejerciciocerradomodulos" COLSPAN="3" ALIGN="LEFT">puntodeequilibrio_ejerciciocontable_ejerciciocerradomodulos</TD></TR>
+      <TR><TD PORT="puntodeequilibrio_ejerciciocontable_comentario" COLSPAN="3" ALIGN="LEFT">puntodeequilibrio_ejerciciocontable_comentario</TD></TR>
+      <TR><TD PORT="puntodeequilibrio_puntodeequilibrio" COLSPAN="3" ALIGN="LEFT">puntodeequilibrio_puntodeequilibrio</TD></TR>
+      <TR><TD PORT="puntodeequilibrio_nombre" COLSPAN="3" ALIGN="LEFT">puntodeequilibrio_nombre</TD></TR>
+      <TR><TD PORT="puntodeequilibrio_puntodeequilibriotipo_id" COLSPAN="3" ALIGN="LEFT">puntodeequilibrio_puntodeequilibriotipo_id</TD></TR>
+      <TR><TD PORT="puntodeequilibrio_puntodeequilibriotipo_codigo" COLSPAN="3" ALIGN="LEFT">puntodeequilibrio_puntodeequilibriotipo_codigo</TD></TR>
+      <TR><TD PORT="puntodeequilibrio_puntodeequilibriotipo_nombre" COLSPAN="3" ALIGN="LEFT">puntodeequilibrio_puntodeequilibriotipo_nombre</TD></TR>
+      <TR><TD PORT="costodeventa_id" COLSPAN="3" ALIGN="LEFT">costodeventa_id</TD></TR>
+      <TR><TD PORT="costodeventa_codigo" COLSPAN="3" ALIGN="LEFT">costodeventa_codigo</TD></TR>
+      <TR><TD PORT="costodeventa_nombre" COLSPAN="3" ALIGN="LEFT">costodeventa_nombre</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">view</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/vplandecuenta.html"
+    tooltip="vplandecuenta"
+  ];
+}

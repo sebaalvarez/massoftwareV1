@@ -1,0 +1,33 @@
+// dot 2.2.1 on Windows 10 10.0
+// SchemaSpy rev 590
+digraph "vpuntodeequilibriotipo" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+    nodesep="0.18"
+    ranksep="0.46"
+    fontname="Helvetica"
+    fontsize="11"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "vpuntodeequilibriotipo" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">vpuntodeequilibriotipo</TD></TR>
+      <TR><TD PORT="classpuntodeequilibriotipo" COLSPAN="3" ALIGN="LEFT">classpuntodeequilibriotipo</TD></TR>
+      <TR><TD PORT="id" COLSPAN="3" ALIGN="LEFT">id</TD></TR>
+      <TR><TD PORT="tipo" COLSPAN="3" ALIGN="LEFT">tipo</TD></TR>
+      <TR><TD PORT="nombre" COLSPAN="3" ALIGN="LEFT">nombre</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">view</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/vpuntodeequilibriotipo.html"
+    tooltip="vpuntodeequilibriotipo"
+  ];
+}

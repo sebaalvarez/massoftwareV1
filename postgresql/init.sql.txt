@@ -1,0 +1,18 @@
+
+CREATE USER massoftwareroot WITH
+	LOGIN
+	SUPERUSER
+	CREATEDB
+	CREATEROLE
+	INHERIT
+	NOREPLICATION
+	CONNECTION LIMIT -1;
+
+CREATE DATABASE massoftware
+    WITH 
+    OWNER = massoftwareroot
+    ENCODING = 'UTF8'
+    CONNECTION LIMIT = -1;
+
+CREATE SCHEMA massoftware
+    AUTHORIZATION postgres;

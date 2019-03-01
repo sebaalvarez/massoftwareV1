@@ -1,0 +1,15 @@
+
+
+java -jar schemaSpy_5.0.0.jar -t pgsql -s massoftware -db massoftware -u massoftwareroot -host localhost -o D:\dev\source\massoftware\sql\schemaSpy\salida -dp postgresql-9.4.1212.jar -gv D:\programas\graphviz-2.38
+
+java -jar schemaSpy_5.0.0.jar -t pgsql -s massoftware -db massoftware -u massoftwareroot -host localhost -o D:\dev\source\massoftware\sql\postgresql\schemaSpy\salida -dp postgresql-9.4.1212.jar -gv D:\programas\ATT\Graphviz
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,229 @@
+// If you edit this file you need to compile the theme. See README.md for details.
+
+// Global variable overrides. Must be declared before importing Valo.
+
+// Defines the plaintext font size, weight and family. Font size affects general component sizing.
+//$v-font-size: 16px;
+//$v-font-weight: 300;
+//$v-font-family: "Open Sans", sans-serif;
+
+// Defines the border used by all components.
+//$v-border: 1px solid (v-shade 0.7);
+//$v-border-radius: 4px;
+
+// Affects the color of some component elements, e.g Button, Panel title, etc
+//$v-background-color: hsl(210, 0%, 98%);
+// Affects the color of content areas, e.g  Panel and Window content, TextField input etc
+//$v-app-background-color: $v-background-color;
+
+// Affects the visual appearance of all components
+//$v-gradient: v-linear 8%;
+//$v-bevel-depth: 30%;
+//$v-shadow-opacity: 5%;
+
+// Defines colors for indicating status (focus, success, failure)
+//$v-focus-color: valo-focus-color(); // Calculates a suitable color automatically
+//$v-friendly-color: #2c9720;
+//$v-error-indicator-color: #ed473b;
+
+// For more information, see: https://vaadin.com/book/-/page/themes.valo.html
+// Example variants can be copy/pasted from https://vaadin.com/wiki/-/wiki/Main/Valo+Examples
+
+@import "../valo/valo.scss";
+
+@mixin mytheme {
+  @include valo;
+
+  // Insert your own theme rules here
+  
+  	.v-radiobutton label {		
+		font-size: 11px;
+	}
+	
+	.v-checkbox label {
+		font-size: 11px;
+	}
+  
+  	.v-grid-row.red-row {
+    	color: red;
+	}
+
+ 	.red {
+    	color: red;
+	}
+	
+	.gray {
+    	color: gray;
+	}
+	
+	.textfield-tiny-grid-selected {
+		background: #197de1;
+		color: white;
+	}
+	
+	.textfield-tiny-grid-gray {
+		background: #ececec;	
+		border-radius: 0px;	
+		line-height: 0px;
+	}
+  
+  	.footer-error {
+		display: inline-block;
+		line-height: inherit;
+		color: #6aaef2;
+		font-size: 11px;
+		font-weight: bold;
+	}
+	
+	.v-labeltext {		
+		color: #6aaef2;
+		font-size: 11px;
+		font-weight: bold;
+	}
+  
+  	.v-captiontext {
+		display: inline-block;
+		line-height: inherit;
+		color: #6aaef2;
+		font-size: 11px;
+		font-weight: bold;
+	}
+	
+	.v-window-header {
+		line-height: 30px;
+		padding-left: 12px;
+		margin-right: 74px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		background-color: #6aaef2;
+		color: white;
+	}
+	
+	.v-button-caption{
+		font-size: 11px;
+	}
+	
+	.v-button-tiny {
+		height: 22px;
+		padding: 0 5px;				
+		font-size: 11px;
+		border-radius: 4px;
+	}
+	
+	.v-textfield-tiny {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-ms-appearance: none;
+		-o-appearance: none;
+		appearance: none;
+		-webkit-user-select: text;
+		-moz-user-select: text;
+		-ms-user-select: text;
+		user-select: text;
+		margin: 0;
+		font: inherit;
+		
+		font-weight: 400;
+		line-height: normal;
+		height: 22px;
+		border-radius: 4px;
+		padding: 3px 7px;
+		
+		
+		-webkit-transition: box-shadow 180ms, border 180ms;
+		-moz-transition: box-shadow 180ms, border 180ms;
+		transition: box-shadow 180ms, border 180ms;
+		font-size: 11px;
+	}
+	
+	.v-datefield-tiny {		
+	
+		height: 22px;
+		
+		font-size: 11px;
+	
+	}
+
+	.v-filterselect-tiny {
+		height: 22px;
+		
+		font-size: 11px;
+	}
+
+	.v-grid-column-header-content, .v-grid-column-footer-content {
+		width: 100%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		line-height: 11px;
+		vertical-align: baseline;
+		font-size: 11px;
+		color: #197de1;		
+	}
+	
+	.v-grid-cell {
+		display: block;
+		float: left;
+		padding: 7px;
+		white-space: nowrap;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		overflow: hidden;
+		font-size: 11px;
+		line-height: 11px;
+	}
+	
+	.v-tree-node-caption {
+		height: 28px;
+		line-height: 20px;
+		overflow: hidden;
+		white-space: nowrap;
+		vertical-align: top;
+		font-size: 13px;
+	}
+	
+	.v-panel-caption {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		padding: 0 12px;
+		line-height: 20px;
+		border-bottom: 1px solid #d5d5d5;
+		background-color: #fafafa;
+		background-image: -webkit-linear-gradient(top, #fafafa 2%, #f6f6f6 98%);
+		background-image: linear-gradient(to bottom,#fafafa 2%, #f6f6f6 98%);
+		color: #464646;
+		font-weight: 400;
+		font-size: 13px;
+		-webkit-box-shadow: inset 0 1px 0 white, inset 0 -1px 0 #eeeeee;
+		box-shadow: inset 0 1px 0 white, inset 0 -1px 0 #eeeeee;
+		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.05);
+		border-radius: 3px 3px 0 0;
+	}
+	
+	.v-margin-top {
+		padding-top: 10px;
+	}
+
+	.v-margin-right {
+		padding-right: 10px;
+	}
+	
+	.v-margin-bottom {
+		padding-bottom: 10px;
+	}
+	
+	.v-margin-left {
+		padding-left: 10px;
+	}
+	
+	.v-spacing {
+		width: 10px;
+		height: 10px;
+	}
+  
+  
+  	
+  
+}

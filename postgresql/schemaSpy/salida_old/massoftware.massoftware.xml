@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<database name="massoftware" schema="massoftware" type="PostgreSQL - 9.6.2">
+   <tables>
+      <table name="centrodecostocontable" numRows="0" remarks="" schema="massoftware" type="TABLE">
+         <column autoUpdated="false" defaultValue="uuid_generate_v4()" digits="0" id="0" name="id" nullable="false" remarks="" size="2147483647" type="varchar">
+            <child column="centrodecostocontable" foreignKey="plandecuenta_centrodecostocontable_fkey" implied="false" onDeleteCascade="false" table="plandecuenta"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="ejerciciocontable" nullable="false" remarks="" size="2147483647" type="varchar">
+            <parent column="id" foreignKey="centrodecostocontable_ejerciciocontable_fkey" implied="false" onDeleteCascade="false" table="ejerciciocontable"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="2" name="centrodecostocontable" nullable="false" remarks="" size="10" type="int4"/>
+         <column autoUpdated="false" digits="0" id="3" name="nombre" nullable="true" remarks="" size="2147483647" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="4" name="abreviatura" nullable="true" remarks="" size="2147483647" type="varchar"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="centrodecostocontable_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+         <index name="u_centrodecostocontable_ejerciciocontable_centrodecostocontable" unique="true">
+            <column ascending="true" name="ejerciciocontable"/>
+            <column ascending="true" name="centrodecostocontable"/>
+         </index>
+      </table>
+      <table name="ejerciciocontable" numRows="0" remarks="" schema="massoftware" type="TABLE">
+         <column autoUpdated="false" defaultValue="uuid_generate_v4()" digits="0" id="0" name="id" nullable="false" remarks="" size="2147483647" type="varchar">
+            <child column="ejerciciocontable" foreignKey="centrodecostocontable_ejerciciocontable_fkey" implied="false" onDeleteCascade="false" table="centrodecostocontable"/>
+            <child column="ejerciciocontable" foreignKey="plandecuenta_ejerciciocontable_fkey" implied="false" onDeleteCascade="false" table="plandecuenta"/>
+            <child column="ejerciciocontable" foreignKey="puntodeequilibrio_ejerciciocontable_fkey" implied="false" onDeleteCascade="false" table="puntodeequilibrio"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="ejercicio" nullable="false" remarks="" size="10" type="int4"/>
+         <column autoUpdated="false" digits="0" id="2" name="fechaapertura" nullable="false" remarks="" size="13" type="date"/>
+         <column autoUpdated="false" digits="0" id="3" name="fechacierre" nullable="false" remarks="" size="13" type="date"/>
+         <column autoUpdated="false" defaultValue="false" digits="0" id="4" name="ejerciciocerrado" nullable="false" remarks="" size="1" type="bool"/>
+         <column autoUpdated="false" defaultValue="false" digits="0" id="5" name="ejerciciocerradomodulos" nullable="false" remarks="" size="1" type="bool"/>
+         <column autoUpdated="false" digits="0" id="6" name="comentario" nullable="true" remarks="" size="2147483647" type="varchar"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="ejerciciocontable_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+         <index name="ejerciciocontable_ejercicio_key" unique="true">
+            <column ascending="true" name="ejercicio"/>
+         </index>
+      </table>
+      <table name="plandecuenta" numRows="0" remarks="" schema="massoftware" type="TABLE">
+         <column autoUpdated="false" defaultValue="uuid_generate_v4()" digits="0" id="0" name="id" nullable="false" remarks="" size="2147483647" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="1" name="ejerciciocontable" nullable="false" remarks="" size="2147483647" type="varchar">
+            <parent column="id" foreignKey="plandecuenta_ejerciciocontable_fkey" implied="false" onDeleteCascade="false" table="ejerciciocontable"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="2" name="cuentacontable" nullable="false" remarks="" size="2147483647" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="3" name="integra" nullable="false" remarks="" size="2147483647" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="4" name="cuentadejerarquia" nullable="false" remarks="" size="2147483647" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="5" name="nombre" nullable="false" remarks="" size="2147483647" type="varchar"/>
+         <column autoUpdated="false" defaultValue="false" digits="0" id="6" name="imputable" nullable="false" remarks="" size="1" type="bool"/>
+         <column autoUpdated="false" defaultValue="false" digits="0" id="7" name="cuentaconapropiacion" nullable="false" remarks="" size="1" type="bool"/>
+         <column autoUpdated="false" defaultValue="false" digits="0" id="8" name="ajustaporinflacion" nullable="false" remarks="" size="1" type="bool"/>
+         <column autoUpdated="false" defaultValue="1" digits="0" id="9" name="estado" nullable="false" remarks="" size="10" type="int4"/>
+         <column autoUpdated="false" digits="0" id="10" name="centrodecostocontable" nullable="false" remarks="" size="2147483647" type="varchar">
+            <parent column="id" foreignKey="plandecuenta_centrodecostocontable_fkey" implied="false" onDeleteCascade="false" table="centrodecostocontable"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="11" name="cuentaagrupadora" nullable="true" remarks="" size="2147483647" type="varchar"/>
+         <column autoUpdated="false" defaultValue="0.0" digits="17" id="12" name="porsentaje" nullable="false" remarks="" size="17" type="float8"/>
+         <column autoUpdated="false" digits="0" id="13" name="puntodeequilibrio" nullable="false" remarks="" size="2147483647" type="varchar">
+            <parent column="id" foreignKey="plandecuenta_puntodeequilibrio_fkey" implied="false" onDeleteCascade="false" table="puntodeequilibrio"/>
+         </column>
+         <column autoUpdated="false" defaultValue="1" digits="0" id="14" name="costodeventa" nullable="false" remarks="" size="10" type="int4"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="plandecuenta_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+         <index name="u_plandecuenta_ejerciciocontable_cuentacontable" unique="true">
+            <column ascending="true" name="ejerciciocontable"/>
+            <column ascending="true" name="cuentacontable"/>
+         </index>
+         <index name="u_plandecuenta_ejerciciocontable_cuentacontable_lower" unique="true">
+            <column ascending="true" name="ejerciciocontable"/>
+         </index>
+      </table>
+      <table name="puntodeequilibrio" numRows="0" remarks="" schema="massoftware" type="TABLE">
+         <column autoUpdated="false" defaultValue="uuid_generate_v4()" digits="0" id="0" name="id" nullable="false" remarks="" size="2147483647" type="varchar">
+            <child column="puntodeequilibrio" foreignKey="plandecuenta_puntodeequilibrio_fkey" implied="false" onDeleteCascade="false" table="plandecuenta"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="ejerciciocontable" nullable="false" remarks="" size="2147483647" type="varchar">
+            <parent column="id" foreignKey="puntodeequilibrio_ejerciciocontable_fkey" implied="false" onDeleteCascade="false" table="ejerciciocontable"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="2" name="puntodeequilibrio" nullable="false" remarks="" size="10" type="int4"/>
+         <column autoUpdated="false" digits="0" id="3" name="nombre" nullable="false" remarks="" size="2147483647" type="varchar"/>
+         <column autoUpdated="false" defaultValue="1" digits="0" id="4" name="tipo" nullable="false" remarks="" size="10" type="int4"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="puntodeequilibrio_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+         <index name="u_puntodeequilibrio_ejerciciocontable_puntodeequilibrio" unique="true">
+            <column ascending="true" name="ejerciciocontable"/>
+            <column ascending="true" name="puntodeequilibrio"/>
+         </index>
+      </table>
+   </tables>
+</database>

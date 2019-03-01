@@ -1,0 +1,43 @@
+// dot 2.38.0 on Windows 10 10.0
+// SchemaSpy rev 590
+digraph "vpuntodeequilibrio" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+    nodesep="0.18"
+    ranksep="0.46"
+    fontname="Helvetica"
+    fontsize="11"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "vpuntodeequilibrio" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">vpuntodeequilibrio</TD></TR>
+      <TR><TD PORT="classpuntodeequilibrio" COLSPAN="3" ALIGN="LEFT">classpuntodeequilibrio</TD></TR>
+      <TR><TD PORT="id" COLSPAN="3" ALIGN="LEFT">id</TD></TR>
+      <TR><TD PORT="ejerciciocontable_id" COLSPAN="3" ALIGN="LEFT">ejerciciocontable_id</TD></TR>
+      <TR><TD PORT="ejerciciocontable_ejercicio" COLSPAN="3" ALIGN="LEFT">ejerciciocontable_ejercicio</TD></TR>
+      <TR><TD PORT="ejerciciocontable_fechaapertura" COLSPAN="3" ALIGN="LEFT">ejerciciocontable_fechaapertura</TD></TR>
+      <TR><TD PORT="ejerciciocontable_fechacierre" COLSPAN="3" ALIGN="LEFT">ejerciciocontable_fechacierre</TD></TR>
+      <TR><TD PORT="ejerciciocontable_ejerciciocerrado" COLSPAN="3" ALIGN="LEFT">ejerciciocontable_ejerciciocerrado</TD></TR>
+      <TR><TD PORT="ejerciciocontable_ejerciciocerradomodulos" COLSPAN="3" ALIGN="LEFT">ejerciciocontable_ejerciciocerradomodulos</TD></TR>
+      <TR><TD PORT="ejerciciocontable_comentario" COLSPAN="3" ALIGN="LEFT">ejerciciocontable_comentario</TD></TR>
+      <TR><TD PORT="puntodeequilibrio" COLSPAN="3" ALIGN="LEFT">puntodeequilibrio</TD></TR>
+      <TR><TD PORT="nombre" COLSPAN="3" ALIGN="LEFT">nombre</TD></TR>
+      <TR><TD PORT="puntodeequilibriotipo_id" COLSPAN="3" ALIGN="LEFT">puntodeequilibriotipo_id</TD></TR>
+      <TR><TD PORT="puntodeequilibriotipo_codigo" COLSPAN="3" ALIGN="LEFT">puntodeequilibriotipo_codigo</TD></TR>
+      <TR><TD PORT="puntodeequilibriotipo_nombre" COLSPAN="3" ALIGN="LEFT">puntodeequilibriotipo_nombre</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">view</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/vpuntodeequilibrio.html"
+    tooltip="vpuntodeequilibrio"
+  ];
+}

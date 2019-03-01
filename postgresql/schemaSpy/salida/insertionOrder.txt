@@ -1,0 +1,8 @@
+ejerciciocontable
+costodeventa
+plandecuentaestado
+puntodeequilibriotipo
+centrodecostocontable
+puntodeequilibrio
+usuario
+plandecuenta
